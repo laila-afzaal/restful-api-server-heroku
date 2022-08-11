@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-let user = []
+let users = []
 
 app.post('/user', (req, res) => {
 
@@ -16,7 +16,7 @@ app.post('/user', (req, res) => {
 
 app.get('/user', (req, res) => {
  
-  res.send('here is your user: user1')
+  res.send(users)
 })
 
 app.put('/user', (req, res) => {
