@@ -9,7 +9,7 @@ let users = []
 app.post('/user', (req, res) => {
 
   console.log(req.body)
-  user.push(req.body)
+  users.push(req.body)
   res.send(' User is created :) ')
 
 })
