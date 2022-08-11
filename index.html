@@ -63,26 +63,22 @@
   .catch(function (error) {
   console.log(error.message);
   });
+}
 
 
+  function getAllUsers() {
 
-      }
+  axios.get("")
+  .then(function (response) {
+   console.log(response.data);
 
+  response.data.map(eachUser => {
+  document.querySelector("#allUserList").innerHTML +=
 
-      function getAllUsers() {
+  `<b>${eachUser.fullname}</b> ${eachUser.username} ${eachUser.password} <br>`;
+  })
 
-          axios.get("https://social-media-server-sysborg.herokuapp.com/user")
-              .then(function (response) {
-                  console.log(response.data);
-
-                  response.data.map(eachUser => {
-                      document.querySelector("#allUserList").innerHTML +=
-
-                          `<b>${eachUser.fullname}</b> ${eachUser.username} ${eachUser.password} <br>`;
-                  })
-
-
-              })
+})
 }
 
 
