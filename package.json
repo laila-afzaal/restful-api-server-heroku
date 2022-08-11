@@ -1,0 +1,23 @@
+{
+  "name": "restful-api-server-heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laila-afzaal/restful-api-server-heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laila-afzaal/restful-api-server-heroku/issues"
+  },
+  "homepage": "https://github.com/laila-afzaal/restful-api-server-heroku#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
