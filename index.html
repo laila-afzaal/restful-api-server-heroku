@@ -73,15 +73,14 @@
   .then(function (response) {
    console.log(response.data);
 
+  document.querySelector('#allUserList').innerHTML="";
   response.data.map(eachUser => {
-  document.querySelector("#allUserList").innerHTML +=
-
-  `<b>${eachUser.fullname}</b> ${eachUser.username} ${eachUser.password} <br>`;
+    document.querySelector('#allUserList').innerHTML += `<br>Name: ${eachUser.fullname} <br/> 
+    Username: ${eachUser.username}<br/>Password: ${eachUser.password} <br>`;;
   })
 
 })
 }
-
 
 </script>
 
